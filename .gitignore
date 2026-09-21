@@ -1,0 +1,13 @@
+# Ignora qualquer arquivo .env em qualquer subpasta do projeto
+**/ .env
+.env
+server/app/.env
+
+# Ambientes virtuais e cache
+.venv/
+server/.venv/
+__pycache__/
+server/app/__pycache__/
+server/app/router/__pycache__/
+banco.db
+server/app/banco.db
