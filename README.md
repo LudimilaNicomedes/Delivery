@@ -16,7 +16,6 @@ Pydantic (Validação de dados)
 python-jose & Passlib (Autenticação JWT e hash de passwords com bcrypt)
 
 📂 Estrutura do Projeto
-Plaintext
 Delivery/
 │
 ├── server/
