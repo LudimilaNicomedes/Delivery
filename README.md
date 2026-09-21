@@ -11,7 +11,7 @@ python-jose & Passlib (Autenticação JWT e hash de passwords com bcrypt)
 
 📂 Estrutura do Projeto
 
-Delivery/
+'''Delivery/
 ├── server/
 │   ├── alembic/                # Migrações da base de dados
 │   ├── app/                    # Código-fonte principal da aplicação
@@ -26,7 +26,7 @@ Delivery/
 │   ├── alembic.ini             # Configuração do Alembic
 │   └── .env                    # Variáveis de ambiente (não versionado)
 ├── .gitignore                  # Ficheiros ignorados pelo Git
-└── requirements.txt            # Dependências do projeto
+└── requirements.txt            # Dependências do projeto'''
 
 Endpoints Principais da API
 🔐 Autenticação (/auth)
