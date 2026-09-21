@@ -1,39 +1,38 @@
-API backend desenvolvida em Python utilizando FastAPI para a gestão completa de um sistema de delivery, contemplando autenticação JWT segura, gestão de utilizadores, criação e controlo de pedidos, bem como itens e migrações de base de dados.
+# 🍔 API de Delivery
 
-🛠️ Tecnologias Utilizadas
-Python
+API REST para gerenciamento de um sistema de delivery, desenvolvida
+como projeto de estudo em desenvolvimento backend.
 
-FastAPI
+## 🚀 Sobre o projeto
 
-SQLAlchemy (ORM para mapeamento objeto-relacional)
+A aplicação permite gerenciar usuários e pedidos, incluindo
+autenticação, criação de pedidos, gerenciamento de itens,
+cancelamento e finalização.
 
-Alembic 
+## 🛠️ Tecnologias
 
-SQLite (Base de dados local)
+- Python
+- FastAPI
+- SQLAlchemy
+- Pydantic
+- Alembic
+- SQLite
+- JWT
+- Passlib / bcrypt
 
-Pydantic (Validação de dados)
+## 🔐 Autenticação
 
-python-jose & Passlib (Autenticação JWT e hash de passwords com bcrypt)
+- Cadastro de usuários
+- Login
+- Access Token
+- Refresh Token
+- Controle de acesso
 
+## 📦 Pedidos
 
-Endpoints Principais da API
-🔐 Autenticação (/auth)
-
-POST /auth/create — Registo de novos utilizadores (validação de email e telefone únicos).
-
-POST /auth/login — Autenticação e retorno de access_token e refresh_token.
-
-GET /auth/refresh — Atualização do token de acesso utilizando o refresh token.
-
-📦 Pedidos (/orders) (Requer Autenticação)
-POST /orders/order — Criação de um novo pedido.
-
-POST /orders/order/add/{id_order} — Adiciona um item (com quantidade, sabor, tamanho e preço) ao pedido.
-
-POST /orders/order/remove/{id_item_order} — Remove um item específico do pedido.
-
-POST /orders/order/cancel/{id_order} — Cancela um pedido existente.
-
-POST /orders/order/finished/{id_order} — Finaliza/conclui um pedido.
-
-GET /orders/list — Lista todos os pedidos (restrito a administradores).
+- Criar pedido
+- Adicionar item
+- Remover item
+- Cancelar pedido
+- Finalizar pedido
+- Listagem administrativa
