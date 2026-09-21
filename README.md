@@ -2,20 +2,15 @@ API backend desenvolvida em Python utilizando FastAPI para a gestão completa de
 
 🛠️ Tecnologias Utilizadas
 Python
-
 FastAPI
-
 SQLAlchemy (ORM para mapeamento objeto-relacional)
-
 Alembic 
-
 SQLite (Base de dados local)
-
 Pydantic (Validação de dados)
-
 python-jose & Passlib (Autenticação JWT e hash de passwords com bcrypt)
 
 📂 Estrutura do Projeto
+
 Delivery/
 │
 ├── server/
@@ -34,6 +29,7 @@ Delivery/
 │
 ├── .gitignore                # Ficheiros ignorados pelo Git
 └── requirements.txt          # Dependências do projeto
+
 
 Endpoints Principais da API
 🔐 Autenticação (/auth)
