@@ -9,24 +9,6 @@ SQLite (Base de dados local)
 Pydantic (Validação de dados)
 python-jose & Passlib (Autenticação JWT e hash de passwords com bcrypt)
 
-📂 Estrutura do Projeto
-
-'''Delivery/
-├── server/
-│   ├── alembic/                # Migrações da base de dados
-│   ├── app/                    # Código-fonte principal da aplicação
-│   │   ├── router/             # Rotas da API
-│   │   │   ├── auth.py         # Rotas de autenticação e registo
-│   │   │   └── order.py        # Rotas de gestão de pedidos e itens
-│   │   ├── banco.db            # Base de dados SQLite local
-│   │   ├── dependencies.py     # Dependências e injeção de sessão/token
-│   │   ├── main.py             # Ponto de entrada da aplicação FastAPI
-│   │   ├── models.py           # Modelos SQLAlchemy (User, Order, OrderItem)
-│   │   └── schemas.py          # Schemas Pydantic para validação de entrada
-│   ├── alembic.ini             # Configuração do Alembic
-│   └── .env                    # Variáveis de ambiente (não versionado)
-├── .gitignore                  # Ficheiros ignorados pelo Git
-└── requirements.txt            # Dependências do projeto'''
 
 Endpoints Principais da API
 🔐 Autenticação (/auth)
